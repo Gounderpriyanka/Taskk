@@ -7,4 +7,3 @@ is_premium = 'False'
 s = bool(is_premium)
 print(type(s))
 
-print(s)
