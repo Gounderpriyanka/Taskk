@@ -38,6 +38,10 @@ while i <len(teams):
 #  its duration in the format: 'Song 1: 210 seconds'
 
 durations = [210, 185, 240, 195, 220]
+for i,j in enumerate(durations,start=1):
+    print(i,j)
+
+
 
 
          

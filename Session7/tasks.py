@@ -39,12 +39,15 @@ else:
 # between 500 and 800, 'Keep Trying' otherwise.Hint: Use nested if-else blocks to check the ranges.
 
 Team_points = int(input("Enter your IPL fantasy team points:"))
-if Team_points > 800:
-    print("Champions")
-    if 800<Team_points and Team_points>500:
+if Team_points > 500:
+    if Team_points>800:
         print("Top Performers!")
+    else:
+         print("Champion") 
 else:
     print("Keep trying")
+
+
 
     
 
