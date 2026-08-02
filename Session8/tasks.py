@@ -1,15 +1,15 @@
 # 1.Create a Python script that uses a for loop to print the names of 5 favorite food delivery apps 
 # (e.g., Zomato, Swiggy, etc.), one per line.
 
-l1 = ["Zomato","Swiggy","QuickBite","Foodport","Fresh2Door"]
+'''l1 = ["Zomato","Swiggy","QuickBite","Foodport","Fresh2Door"]
 for i in l1:
-    print(i)
+    print(i)'''
 
 # 2.Given a list of daily step counts for a week, use a while loop to find and print the first day
 #  when you crossed 10,000 steps.Hint: Loop through the list and stop
 #  as soon as you find a value greater than 10,000.
 
-steps = [6500, 7800, 9200, 10500, 9800, 12000, 8500]
+'''steps = [6500, 7800, 9200, 10500, 9800, 12000, 8500]
 days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 
 i = 0
@@ -18,12 +18,12 @@ while i <len(steps):
         print("First day you crossed 10,000 steps: ",days[i])
         print("Steps:",steps[i])
         break
-    i += 1
+    i += 1'''
 
 #3.Write a Python function that takes a list of IPL team names and prints only those teams
 #  whose names are longer than 6 characters, skipping the rest using the continue statement.
 
-teams = ["MI", "CSK", "Royal Challengers Bengaluru", "Sunrisers Hyderabad", "GT", "Punjab Kings", "KKR"]
+'''teams = ["MI", "CSK", "Royal Challengers Bengaluru", "Sunrisers Hyderabad", "GT", "Punjab Kings", "KKR"]
 i = 0
 while i <len(teams):
     if len(teams[i])<=6:
@@ -31,15 +31,36 @@ while i <len(teams):
         continue
 
     print(teams[i])
-    i += 1
+    i += 1'''
 
 #4.You have a list of song durations (in seconds) from your Spotify playlist.
 # Use a for loop with enumerate to print each song's position (starting from 1) and
 #  its duration in the format: 'Song 1: 210 seconds'
 
-durations = [210, 185, 240, 195, 220]
+'''durations = [210, 185, 240, 195, 220]
 for i,j in enumerate(durations,start=1):
-    print(i,j)
+    print("Song",i,":",j,"seconds")'''
+
+# 5.Build a simple shopping cart total calculator: Given a list of item prices from a Flipkart cart,
+#  use a loop to sum the prices. If an item price is 0 (out of stock), skip it. Stop adding items
+#  if the running total crosses ₹2000 using break, and print the final total.
+# Constraint:Use both break and continue in your solution.
+
+a = int(input("Enter number of items:"))
+l1 = []
+summ = 0
+for i in range(1,a+1):
+    price = int(input(f"Enter price of item {i}:"))
+    l1.append(price)
+    if price==0:
+        continue
+    summ = sum(l1)
+    if summ > 2000:
+        break
+print("Final Total:",summ)
+
+
+
 
 
 
