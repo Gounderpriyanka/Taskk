@@ -1,0 +1,5 @@
+'''1.Use iter() and next() to manually loop through a list of your 5 favorite food delivery apps (like Zomato, Swiggy, Domino's, etc.) and print each app name one by one.
+2.Write a generator function called playlist_generator that takes a list of song names and yields each song one at a time, simulating a Spotify playlist shuffle.
+3.Use enumerate() to print out the index and name of each item in a shopping cart list (e.g., ['Pizza', 'Burger', 'Fries', 'Coke']) like Flipkart displays item numbers in your cart.
+4.Given two lists — one with cricket team names and one with their IPL points — use zip() to pair each team with its points and print them in the format: 'Team: Mumbai Indians, Points: 18'.
+5.Create a generator function called order_id_generator that yields a new order ID (starting from 1001) each time it's called, similar to how Zomato or Swiggy generates unique order numbers.<br><br><em><strong>Hint:</strong> Use the yield statement inside a loop to generate the next ID.</em>'''
