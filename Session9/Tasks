@@ -1,0 +1,54 @@
+# 1.Define a function called calculate_final_price(price, discount_rate) that returns 
+# the final price after applying the discount rate to the given price.
+'''price = int(input("Enter the price:"))
+discount_rate = int(input("Enter the discount:"))
+def calculate_final_price(price,discount_rate):
+        final_price = price - (price*discount_rate/100)
+        return print("The final price is:",final_price)
+calculate_final_price(price,discount_rate)'''
+
+#2.Create a function called get_delivery_charge(amount, city='Ahmedabad')
+#  that returns 0 if city is 'Ahmedabad', otherwise returns 50 as a delivery charge.
+# Hint:Use a default argument for the city parameter.
+
+'''def get_delivery_charge(amount, city='Ahmedabad'):
+    if city == "Ahmedabad":
+        return 0 
+    else:
+        return 50
+amount = float(input("Enter the amount:"))
+city = input("Enter the city:")
+get_delivery_charge(city,amount)
+
+if city == "":
+    print("Delivery Charge:", get_delivery_charge(amount))
+else:
+    print("Delivery Charge:", get_delivery_charge(amount, city))'''
+
+# 3.Write a function called format_price(price, currency='INR') that returns a string like '₹500'
+#  if currency is 'INR', or '$500' if currency is 'USD'.
+'''def format_price(price,currency='INR'):
+    if currency == "USD":
+        return f"${price}"
+    else:
+        return f"₹{price}"
+
+price = int(input("Enter the amount:"))
+currency = input("Enter the currency(USD/INR):")
+print(format_price(price,currency))
+'''
+
+#4.Build a function called apply_coupon(price, coupon_code=None) that
+#  returns the price after a 10% discount if coupon_code is 'ZOMATO10', 
+# otherwise returns the original price.
+# Constraint:Use a default argument for coupon_code.
+def apply_coupon(price,coupon_code=None):
+    if coupon_code == 'ZOMATO10':
+        discount_price = price-(price*10/100)
+        return discount_price
+    else:
+        return price
+
+price = int(input("Enter the price:"))
+code = input("Enter the coupon code:")
+print(apply_coupon(price,code))
