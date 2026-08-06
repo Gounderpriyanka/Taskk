@@ -1,0 +1,5 @@
+'''1.Use re.findall() to extract all valid phone numbers from a given string in the format '+91-XXXXXXXXXX' (e.g., '+91-9876543210'). Print the list of found numbers.
+2.Write a Python function using re.search() that checks if a string contains a valid date in the format 'DD/MM/YYYY'. The function should return True if a date is found, otherwise False.
+3.Given a block of text containing multiple prices (like 'Rs. 299', 'Rs. 1500', etc.), use re.findall() to extract all the numeric price values as integers and print their sum.<br><br><em><strong>Hint:</strong> Look for patterns like 'Rs. ' followed by one or more digits.</em>
+4.Use re.sub() to replace all email addresses in a string with '[hidden email]' and print the modified string.<br><br><em><strong>Constraint:</strong> Do not use any external libraries except re.</em>
+5.Download a sample Instagram comments text file (or create your own with at least 10 lines), then write a Python script to extract all valid Instagram usernames (pattern: starts with '@', followed by letters, numbers, underscores, minimum 3 characters) using re.findall() and print the unique usernames.'''

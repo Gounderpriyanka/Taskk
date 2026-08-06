@@ -54,7 +54,7 @@ for i in range(1,a+1):
     l1.append(price)
     if price==0:
         continue
-    summ = sum(l1)
+    summ +=price
     if summ > 2000:
         break
 print("Final Total:",summ)

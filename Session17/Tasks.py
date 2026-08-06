@@ -1,0 +1,5 @@
+'''1.Create a Python script that imports the math module and uses math.sqrt() to calculate and print the square root of 225.
+2.Write a script that uses the os module to create a new folder named 'MyDownloads' in your current working directory, then print the absolute path of the new folder.
+3.Use the datetime module to get the current date and time, then format and print it as 'DD-MM-YYYY HH:MM:SS', similar to how WhatsApp shows message timestamps.<br><br><em><strong>Hint:</strong> Use strftime() to format the output.</em>
+4.Create a custom Python module called playlist_utils.py with a function add_song(playlist, song) that adds a song to a list. Import this module in another script and use it to add three songs to a playlist, then print the final playlist.
+5.Set up a new virtual environment using venv, activate it, and install the 'requests' package using pip. Write a short script that imports requests and prints the version installed.<br><br><em><strong>Hint:</strong> Use 'python -m venv venv_folder', then 'pip install requests'.</em>'''
