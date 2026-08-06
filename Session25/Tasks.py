@@ -1,0 +1,5 @@
+'''1.Fetch the latest 24-hour price and volume data for at least 10 popular cryptocurrencies using the Binance API and save the raw JSON response to a file named crypto_data.json.
+2.Write a Python function find_most_volatile_coin(data) that takes the loaded Binance coin data and returns the symbol of the coin with the highest percentage price change in the last 24 hours.
+3.Create a script that calculates the average price of all coins in your crypto_data.json, then prints a list of all coins currently trading below this average price.
+4.Build a function rank_coins_by_volume(data) that sorts all coins by their total traded volume in descending order and prints the top 5 coins with their rank and volume.
+5.Automate your data fetch and analysis by scheduling your script to run every hour using the schedule Python library, and add error handling to gracefully manage Binance API rate limits.<br><br><em><strong>Hint:</strong> Catch HTTP 429 errors and implement a retry with exponential backoff.</em>'''

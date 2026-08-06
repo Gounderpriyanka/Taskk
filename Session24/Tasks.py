@@ -1,0 +1,4 @@
+'''1.Use the requests library to fetch the top 10 cryptocurrencies and their current prices in USD from the CoinGecko API (https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1). Print the name and price of each coin.
+2.Extend your script to also fetch and display the 24-hour price change percentage, 24-hour high, and 24-hour low for each of the top 10 cryptocurrencies.
+3.Save the fetched data (name, current price, price change %, 24h high, 24h low) for the top 10 cryptocurrencies into a CSV file named crypto_prices.csv using the csv module.
+4.Add error handling to your code so that if the API request fails or returns an error, your script prints a user-friendly message instead of crashing.<br><br><em><strong>Hint:</strong> Check the response status code and handle exceptions from the requests library.</em>'''
