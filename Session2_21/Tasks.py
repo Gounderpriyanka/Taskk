@@ -1,0 +1,5 @@
+'''1.Use the requests library to send a POST request to https://jsonplaceholder.typicode.com/posts with a JSON payload containing a title, body, and userId, then print the response status code and JSON data.
+2.Build a Python script that lets a user enter a new playlist name and description, sends this data as JSON in a POST request to a mock API endpoint (such as https://jsonplaceholder.typicode.com/posts), and prints the playlist ID returned by the API.
+3.Send a POST request to https://reqres.in/api/users with a JSON object containing a username and job, then parse the response to extract and print the created user's ID and creation timestamp.<br><br><em><strong>Hint:</strong> Use response.json() to access the returned data.</em>
+4.Write a script that fetches the latest 5 posts from https://jsonplaceholder.typicode.com/posts, parses the JSON response, and saves the post titles and userIds to a CSV file called posts.csv.<br><br><em><strong>Hint:</strong> Use the csv module for writing to CSV.</em>
+5.Modify your script to save the same API data (latest 5 posts from https://jsonplaceholder.typicode.com/posts) into a JSON file named posts.json instead of CSV.'''

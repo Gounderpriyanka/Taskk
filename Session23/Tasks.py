@@ -1,0 +1,5 @@
+'''1.Fetch the current temperature and weather description for your city using the OpenWeatherMap API and print the results in a readable format.
+2.Build a small Python script that fetches the latest price of Bitcoin and Ethereum from the CoinGecko API and displays them with the current date and time.
+3.Use the NASA Astronomy Picture of the Day (APOD) API to get today's image title and explanation, and save the image to your local system.<br><br><em><strong>Hint:</strong> The API returns a URL for the image — use requests to download it.</em>
+4.Create a Python program that fetches the latest COVID-19 case numbers for India from a public COVID API and displays total cases, recovered, and deaths in a table format.
+5.Combine data from two APIs: fetch the current temperature in Mumbai from OpenWeatherMap and the latest Bitcoin price from CoinGecko, then display both results together in a single output.<br><br><em><strong>Constraint:</strong> Handle errors gracefully if either API call fails and show an appropriate message.</em>'''

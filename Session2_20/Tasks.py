@@ -1,0 +1,4 @@
+'''1.Use the requests.get() function to fetch the latest posts from the JSONPlaceholder API endpoint https://jsonplaceholder.typicode.com/posts and print the status code and the first post's title.
+2.Send a POST request to https://jsonplaceholder.typicode.com/posts using requests.post() with the data: title='My First Post', body='Hello from Python!', userId=101, and print the status code and the returned JSON response.
+3.Fetch a list of users from https://jsonplaceholder.typicode.com/users using requests.get(), then use the .json() method to extract and print the usernames of all users whose email ends with '.org'.
+4.Build a small script that fetches movies from the OMDB API (http://www.omdbapi.com/) by sending a GET request with query parameters: apikey='demo', s='Avengers'. Print the total number of results found.<br><br><em><strong>Hint:</strong> Pass the parameters using the params={} argument in requests.get().</em>'''
