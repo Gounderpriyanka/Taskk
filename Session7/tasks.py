@@ -41,9 +41,9 @@ else:
 Team_points = int(input("Enter your IPL fantasy team points:"))
 if Team_points > 500:
     if Team_points>800:
-        print("Top Performers!")
+        print("Champion")
     else:
-         print("Champion") 
+         print("Top Performers!") 
 else:
     print("Keep trying")
 
