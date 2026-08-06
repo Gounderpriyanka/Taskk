@@ -23,15 +23,19 @@ while i <len(steps):
 #3.Write a Python function that takes a list of IPL team names and prints only those teams
 #  whose names are longer than 6 characters, skipping the rest using the continue statement.
 
-'''teams = ["MI", "CSK", "Royal Challengers Bengaluru", "Sunrisers Hyderabad", "GT", "Punjab Kings", "KKR"]
-i = 0
-while i <len(teams):
-    if len(teams[i])<=6:
-        i += 1
-        continue
+teams = ["MI", "CSK", "Royal Challengers Bengaluru", "Sunrisers Hyderabad", "GT", "Punjab Kings", "KKR"]
 
-    print(teams[i])
-    i += 1'''
+def team_names(a):
+    i = 0
+    while i <len(a):
+        if len(a[i])<=6:
+            i += 1
+            continue
+
+        print(a[i])
+        i += 1
+team_names(teams)
+
 
 #4.You have a list of song durations (in seconds) from your Spotify playlist.
 # Use a for loop with enumerate to print each song's position (starting from 1) and
@@ -46,7 +50,7 @@ for i,j in enumerate(durations,start=1):
 #  if the running total crosses ₹2000 using break, and print the final total.
 # Constraint:Use both break and continue in your solution.
 
-a = int(input("Enter number of items:"))
+'''a = int(input("Enter number of items:"))
 l1 = []
 summ = 0
 for i in range(1,a+1):
@@ -58,7 +62,7 @@ for i in range(1,a+1):
     if summ > 2000:
         break
 print("Final Total:",summ)
-
+'''
 
 
 
