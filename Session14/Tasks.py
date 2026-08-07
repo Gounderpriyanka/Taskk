@@ -22,9 +22,9 @@
 #columns: match_id, team1, team2, winner) and write a Python script to read the file
 # and print the winner of each match using the csv module.
 
-import csv as cv
+'''import csv as cv
 
-'''with open("IPL_Match_Score.csv",'w',newline='') as file:
+    with open("IPL_Match_Score.csv",'w',newline='') as file:
     writer = cv.writer(file)
     writer.writerow(['match_id','team1','team2','winner'])
     writer.writerow(["101","Chennai Super Kings","Mumbai Indians","Chennai Super Kings"])
@@ -45,7 +45,7 @@ import csv as cv
 # containing title, year, and rating), then use the json module in Python to load the file and
 #  print the title and rating of each movie.
 
-import json
+'''import json
 
 with open("movies.json",'w') as file:
     data =[
@@ -66,10 +66,14 @@ with open("movies.json",'w') as file:
     }
     ]
     file.write(json.dumps(data,indent=3))
-    file.close()
+    file.close()'''
 
 
 
 
 '''
- 5.Use the pathlib module to check if a file called 'my_fav_apps.json' exists in your current directory, and if not, create it and write a JSON array of your top 3 mobile apps (e.g., Instagram, Zomato, Paytm) with their names and categories.<br><br><em><strong>Hint:</strong> Use Path('my_fav_apps.json').exists() to check for the file, and json.dump() to write the data.</em>'''
+ 5.Use the pathlib module to check if a file called 'my_fav_apps.json' exists in your current directory,
+ and if not, create it and write a JSON array of your top 3 mobile apps (e.g., Instagram, Zomato, Paytm)
+   with their names and categories.<br><br><em><strong>Hint:</strong> Use Path('my_fav_apps.json').
+   exists() to check for the file, and json.dump() to write the data.</em>'''
+
