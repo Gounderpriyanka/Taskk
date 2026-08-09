@@ -1,12 +1,22 @@
 #1.Write a recursive function in Python called print_playlist_songs(songs) that takes a list of song
 #  names (like a Spotify playlist) and prints each song name one by one using recursion
 
-'''l1 = ['Perfect','Arcade','Blinding Lights','Espresso','Levitating']
+l1 = ['Perfect','Arcade','Blinding Lights','Espresso','Levitating']
 
 def print_playlist_songs(songs):
-    for i in songs:
-        return print(print_playlist_songs(songs))
-print_playlist_songs(l1)'''
+    if len(songs) ==0 :
+        return
+    print(songs[0])
+    print_playlist_songs(songs[1:])
+print_playlist_songs(l1)
+
+
+'''
+def print_playlist_songs(songs):
+    if len(songs)==0:
+        for i in songs:
+            return''' 
+        
 
 
 # 2.Create a recursive function count_unread_messages(messages) that takes a nested dictionary 
@@ -14,12 +24,12 @@ print_playlist_songs(l1)'''
 # across all groups.Hint:Each group can have a 'count' key for unread messages and a 'subgroups'
 #  key with a list of more groups.
 
-def count_unread_messages(messages):
+'''def count_unread_messages(messages):
     groups = {
         subgroups = {
 
         }
-    }
+    }'''
 
 
 
