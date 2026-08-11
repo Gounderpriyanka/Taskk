@@ -29,21 +29,6 @@ for app, action, data, data_type in actions:
 # Task 2
 # Classify the music app data.
 
-genres = [
-    "Pop", "Rock", "Jazz", "Hip-Hop",
-    "Pop", "Rock", "Jazz", "Pop"
-]
-
-print("TASK 2: Music App Data")
-print("----------------------")
-
-print("Music genres:", genres)
-print("Data Type: Categorical")
-
-print("\nGenre Counts:")
-
-for genre in set(genres):
-    print(genre, ":", genres.count(genre))
 
 print("\nReason:")
 print("This is categorical data because the values represent")
@@ -54,21 +39,6 @@ print()
 # Task 3
 # Statistics applied to an Instagram feature.
 
-likes = [120, 150, 200, 180, 250, 300, 100]
-
-print("TASK 3: Statistics in an App")
-print("----------------------------")
-
-print("Instagram post likes:", likes)
-
-mean_likes = sum(likes) / len(likes)
-
-sorted_likes = sorted(likes)
-middle = len(sorted_likes) // 2
-median_likes = sorted_likes[middle]
-
-print("Mean likes:", mean_likes)
-print("Median likes:", median_likes)
 
 print("\nStatistics can help analyze user engagement.")
 print("Mean and median can show the typical number of likes")
@@ -79,9 +49,6 @@ print()
 # Task 4
 # Three basic statistical terms useful for a playlist
 # recommendation system.
-
-print("TASK 4: Statistical Terms")
-print("-------------------------")
 
 print("1. Mean:")
 print("If a user listens to 20, 30 and 40 songs per day,")
@@ -96,9 +63,3 @@ print("If a user listens to Pop 10 times, Rock 5 times,")
 print("and Jazz 3 times, Pop is the mode.")
 
 
-# Conclusion
-
-print("\nCONCLUSION")
-print("----------")
-print("Statistics helps applications understand user behavior")
-print("and provide better personalized recommendations.")
