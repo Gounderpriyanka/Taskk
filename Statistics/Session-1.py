@@ -7,11 +7,6 @@ Pick any one feature from an app you use (such as the number of likes on an Inst
 4.
 Suppose you are building a new playlist recommendation feature for a Spotify-like app. List 3 basic statistical terms (such as mean, median, mode, variance, etc.) that would be useful in analyzing user listening data, and explain each with a one-line example.'''
 
-# ============================================================
-# Statistics Tasks - Data Science Course
-# ============================================================
-
-
 # Task 1
 # List 5 daily actions performed on apps and identify
 # whether the data generated is Numerical or Categorical.
@@ -23,10 +18,6 @@ actions = [
     ("Flipkart", "Product category", "Electronics", "Categorical"),
     ("Flipkart", "Product price", 1499, "Numerical")
 ]
-
-print("TASK 1: Daily Actions and Data Types")
-print("--------------------------------------")
-
 for app, action, data, data_type in actions:
     print("App:", app)
     print("Action:", action)
