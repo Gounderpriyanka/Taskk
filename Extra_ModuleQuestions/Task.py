@@ -14,20 +14,25 @@ print(f"The Substring is appeared {count} times")'''
 
 #3. Write a Python program to count the occurrences of each word in a given sentence.
 
-word = "python is easy and python is powerful"
+'''word = "python is easy and python is powerful"
 split = word.split(" ")
+count = {}
 
 for i in split:
-    count = word.count(i)
-    print(f"'{i}' : {count}")
-print(split)
+    if i in count:
+        count[i] += 1
+    else :
+        count[i] = 1
+for j in count:
+    print(j,":",count[j])'''
+
 
 #4. Write a Python program to get a single string from two given strings, separated by a space and
 #  swap the first two characters of each string.
 
 first = input("Enter the first character:")
 second = input("Enter the second character:")
-print(f"{first[0]}+{second[1:]}")
+print(f"{first[0]+second[1:]+         
 
 #5. Write a Python program to add 'ing' at the end of a given string (length should be at least 3).
 #If the given string already ends with 'ing' then add 'ly' instead If the string length of the given
