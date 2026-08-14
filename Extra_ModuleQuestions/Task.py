@@ -32,7 +32,7 @@ for j in count:
 
 first = input("Enter the first character:")
 second = input("Enter the second character:")
-print(f"{first[0]+second[1:]+         
+print(first[0]+second[1:]+ " " +second[0]+first[1:])     
 
 #5. Write a Python program to add 'ing' at the end of a given string (length should be at least 3).
 #If the given string already ends with 'ing' then add 'ly' instead If the string length of the given
@@ -43,16 +43,21 @@ print(f"{first[0]+second[1:]+
 if len(n)>=3:
     if n[-3:] == "ing":
         n+="ly"
+        print(n)
     else:
         n+="ing"
+        print(n)
 else:
     print("Enter a string atleast 3 len!")
-print(n)'''
+'''
 
 #6. Write a Python program to find the first appearance of the substring 'not' and 'poor' from a given string, if
 # 'not' follows the 'poor', replace the whole 'not'...'poor' substring with 'good'.
 # Return the resulting string
-
+    
 text = "The movie is not very poor"
+splitt = text.split
+for i in splitt:
+    if i!=
 
 
