@@ -30,9 +30,9 @@ for j in count:
 #4. Write a Python program to get a single string from two given strings, separated by a space and
 #  swap the first two characters of each string.
 
-first = input("Enter the first character:")
+'''first = input("Enter the first character:")
 second = input("Enter the second character:")
-print(first[0]+second[1:]+ " " +second[0]+first[1:])     
+print(first[0]+second[1:]+ " " +second[0]+first[1:])  '''   
 
 #5. Write a Python program to add 'ing' at the end of a given string (length should be at least 3).
 #If the given string already ends with 'ing' then add 'ly' instead If the string length of the given
@@ -54,10 +54,17 @@ else:
 #6. Write a Python program to find the first appearance of the substring 'not' and 'poor' from a given string, if
 # 'not' follows the 'poor', replace the whole 'not'...'poor' substring with 'good'.
 # Return the resulting string
-    
+
+import re 
 text = "The movie is not very poor"
-splitt = text.split
-for i in splitt:
-    if i!=
+not_pos = text.find("not")
+poor_pos = text.find("poor")
+
+print(not_pos)
+print(poor_pos)
+
+if not_pos != -1 and poor_pos != -1 and not_pos < poor_pos:text = text[:not_pos] + "good" + text[poor_pos + 4:]
+
+print(text)
 
 
