@@ -97,3 +97,17 @@ for i in range(len(l1)):
 
 print(l2)
 print(l3)'''
+
+#12. Write a Python program to convert a list of tuples into a dictionary
+
+'''l1 =  [('a', 1), ('b', 2), ('c', 3)]
+d1 = dict(l1)
+print(d1)'''
+
+
+#13. Write a Python program to sort a dictionary (ascending /descending) by value.
+d1  = {'a': 3, 'b': 1, 'c': 2}
+a = sorted(d1)
+
+
+print(a)
