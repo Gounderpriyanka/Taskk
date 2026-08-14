@@ -55,7 +55,7 @@ else:
 # 'not' follows the 'poor', replace the whole 'not'...'poor' substring with 'good'.
 # Return the resulting string
 
-import re 
+'''import re 
 text = "The movie is not very poor"
 not_pos = text.find("not")
 poor_pos = text.find("poor")
@@ -65,6 +65,35 @@ print(poor_pos)
 
 if not_pos != -1 and poor_pos != -1 and not_pos < poor_pos:text = text[:not_pos] + "good" + text[poor_pos + 4:]
 
-print(text)
+print(text)'''
 
+# 7. Program to find Greatest Common Divisor of two numbers.
+# For example, the GCD of 20 and 28 is 4 and GCD of 98 and 56 is 14.
 
+'''import math
+a = 20
+b = 28
+print(math.gcd(a,b))'''
+
+# 8. Write a Python program to check whether a list contains a sublist.
+
+#9. Write a Python program to find the second smallest number in a list.
+'''l1 = [10, 5, 8, 3, 15]
+l = sorted(l1)
+print("Second Smallest number is",l[1])'''
+
+# 10. Write a Python program to get unique values from a list.
+'''l1 = [1, 2, 2, 3, 4, 4, 5]
+l = list(set(l1))
+print(l)
+'''
+#11. Write a Python program to unzip a list of tuples into individual lists.
+'''l1 = [('A', 1), ('B', 2), ('C', 3)]
+l2 = []
+l3 = []
+for i in range(len(l1)):
+    l2.append(l1[i][0])
+    l3.append(l1[i][1])
+
+print(l2)
+print(l3)'''
