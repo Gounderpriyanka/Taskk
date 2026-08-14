@@ -106,8 +106,24 @@ print(d1)'''
 
 
 #13. Write a Python program to sort a dictionary (ascending /descending) by value.
-d1  = {'a': 3, 'b': 1, 'c': 2}
-a = sorted(d1)
+'''d1  = {'a': 3, 'b': 1, 'c': 2}
+a = dict(sorted(d1.items(),key=lambda x : x[1]))
+d = dict(sorted(d1.items(),key=lambda x : x[1],reverse=True))
 
 
-print(a)
+print("Asscending order:",a)
+print("Descending order:",d)
+'''
+
+#14. Write a Python program to find the highest 3 values in a dictionary.
+'''d1 = {'a': 50, 'b': 90, 'c': 30, 'd': 80, 'e': 70}
+a = dict(sorted(d1.items(),key=lambda x : x[1])[-3:])
+print(a)'''
+
+
+#15. Given a number n, write a python program to make and print the list of Fibonacci series up to n.
+# Input : n=7
+# Hint : first 7 numbers in the series
+# Expected output :
+# First few Fibonacci numbers are 0, 1, 1, 2, 3, 5, 8, 13
+
