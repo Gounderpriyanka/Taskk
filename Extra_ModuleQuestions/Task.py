@@ -155,3 +155,16 @@ print(d2)'''
 # Even series: 22/ 2! + 42/ 4! + 62/ 6!+……n
 
 
+
+# 18. Python Program to Find Factorial of Number Using Recursion
+'''def fact(n):
+    if n==1:
+        return 1
+    return n*fact(n-1)
+print(fact(5))'''
+
+#19. Write a Python function that takes a list and returns a new list with unique elements of the first list.
+l1 = [1, 2, 2, 3, 4, 3, 5]
+l2 = list(set(l1))
+print(l2)
+
