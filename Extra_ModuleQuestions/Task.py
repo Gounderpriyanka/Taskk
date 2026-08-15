@@ -154,7 +154,32 @@ print(d2)'''
 # Odd series: 12/ 1! + 32/ 3! + 52/ 5!+……n
 # Even series: 22/ 2! + 42/ 4! + 62/ 6!+……n
 
+'''import math
+n = int(input("Enter a number:"))
 
+odd = []
+even = []
+for i in range(n+1):
+    if i%2==0:
+        even.append(i)
+    else:
+        odd.append(i)
+ 
+
+def sum_odd_series (odd):
+    total = 0
+    for i in odd:
+        total += ((i**2)/math.factorial(i))
+    return total
+def sum_even_series(even):
+    totall = 0
+    for i in even:
+        
+        totall += ((i**2)/math.factorial(i))
+    return totall
+
+print("Sum of odd series:",sum_odd_series(odd))
+print("Sum of even series:",sum_even_series(even))'''
 
 # 18. Python Program to Find Factorial of Number Using Recursion
 '''def fact(n):
@@ -164,7 +189,16 @@ print(d2)'''
 print(fact(5))'''
 
 #19. Write a Python function that takes a list and returns a new list with unique elements of the first list.
-l1 = [1, 2, 2, 3, 4, 3, 5]
+'''l1 = [1, 2, 2, 3, 4, 3, 5]
 l2 = list(set(l1))
-print(l2)
+print(l2)'''
+
+#20. Mini project :
+# Problem Statement : Password Generator
+# Make a program to generate a strong password using the input given by the user. To generate a password,
+# randomly take some words from the user input and then include numbers, special characters and capital
+# letters to generate the password. Also, keep a check that password length is more than 8 characters.
+# Note: Include Exception handling wherever required. Also, make a ‘User’ class and store the details like user
+# id, name and password of each user as a tuple.
+
 
