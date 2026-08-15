@@ -127,3 +127,31 @@ print(a)'''
 # Expected output :
 # First few Fibonacci numbers are 0, 1, 1, 2, 3, 5, 8, 13
 
+'''n=int(input("enter the number: "))
+a=0
+b=1
+c=0
+for i in range(n+1):
+    print(a)
+    c=a+b
+    a=b
+    b=c '''
+
+# 16. Counting the frequencies in a list using a dictionary in Python.
+# Input : [1, 1, 1, 5, 5, 3, 1, 3, 3, 1,4, 4, 4, 2, 2, 2, 2]
+# Expected output : 1 : 5 , 2 : 4 , 3 : 3 , 4 : 3 , 5 : 2
+
+'''l1 = [1, 1, 1, 5, 5, 3, 1, 3, 3, 1,4, 4, 4, 2, 2, 2, 2]
+d1 = {}
+for i in l1:
+    count = 0
+    if i not in d1:
+        d1[i] = l1.count(i)
+d2 = dict(sorted(d1.items()))
+print(d2)'''
+
+# 17. Write a python program using function to find the sum of odd series and even series
+# Odd series: 12/ 1! + 32/ 3! + 52/ 5!+……n
+# Even series: 22/ 2! + 42/ 4! + 62/ 6!+……n
+
+
