@@ -215,22 +215,105 @@ print(l2)'''
 
 import random
 import string
-class user:
 
+
+class User:
+    def __init__(self, user_id, name, password):
+        self.user_id = user_id
+        self.name = name
+        self.password = password
+
+    def get_details(self):
+        return (self.user_id, self.name, self.password)
+
+
+def generate_password(words, length):
+    split_words = words.split()
+
+    if len(split_words) == 0:
+        raise ValueError("Please enter at least one word.")
 
     
-    user_id = int(input("Enter a id:"))
-    name = input("Enter the name :")
-    word = input("Enter the word with space to include in the password:")
-    
-
-    password = ""
-    split_word = word.split()
-    random_word = random.choice(split_word)
+    random_word = random.choice(split_words)
     short_word = random_word[:2].capitalize()
 
-    random_num = random.randint(1,9)
-    random_symbols = random.choice(string.punctuation)
-    last_random_word = random.choice(split_word)
-    password = short_word+str(random_num)+random_symbols+last_random_word
-    print(password)
+    
+    random_num = str(random.randint(0, 9))
+    random_symbol = random.choice(string.punctuation)
+
+    
+    last_random_word = random.choice(split_words)
+
+    
+    password = short_word + random_num + random_symbol + last_random_word
+
+    
+    if len(password) > length:
+        password = password[:length]
+
+    elif len(password) < length:
+        remaining = length - len(password)
+
+        characters = string.ascii_letters + string.digits + string.punctuation
+
+        for i in range(remaining):
+            password += random.choice(characters)
+
+    return password
+
+
+def check_password(password):
+    if len(password) <= 8:
+        return False
+
+    upper = False
+    lower = False
+    digit = False
+    special = False
+
+    special_char = string.punctuation
+
+    for ch in password:
+        if ch.isupper():
+            upper = True
+
+        elif ch.islower():
+            lower = True
+
+        elif ch.isdigit():
+            digit = True
+
+        elif ch in special_char:
+            special = True
+
+    return upper and lower and digit and special
+
+
+def main():
+
+    try:
+        user_id = int(input("Enter User ID: "))
+        name = input("Enter Name: ")
+        words = input("Enter some words: ")
+        length = int(input("Enter password length: "))
+
+        if length <= 8:
+            raise ValueError("Password length must be more than 8.")
+
+        password = generate_password(words, length)
+
+        if check_password(password):
+            user = User(user_id, name, password)
+
+            print("\nGenerated Password:", password)
+            print("User Details:")
+            print(user.get_details())
+
+        else:
+            print("Password does not satisfy all requirements.")
+
+    except ValueError as e:
+        print("Error:", e)
+
+
+main()
