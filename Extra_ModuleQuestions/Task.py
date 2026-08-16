@@ -214,16 +214,23 @@ print(l2)'''
 # (101, 'Priyanka', 'Py7#coding')
 
 import random
+import string
 class user:
 
 
     
     user_id = int(input("Enter a id:"))
     name = input("Enter the name :")
-    word = input("Enter the word to include in the password:")
+    word = input("Enter the word with space to include in the password:")
     
 
     password = ""
     split_word = word.split()
-    random_word = random.sample(split_word,2)
-    print(random_word)
+    random_word = random.choice(split_word)
+    short_word = random_word[:2].capitalize()
+
+    random_num = random.randint(1,9)
+    random_symbols = random.choice(string.punctuation)
+    last_random_word = random.choice(split_word)
+    password = short_word+str(random_num)+random_symbols+last_random_word
+    print(password)
