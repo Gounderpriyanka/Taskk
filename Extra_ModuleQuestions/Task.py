@@ -213,36 +213,17 @@ print(l2)'''
 # User Details:
 # (101, 'Priyanka', 'Py7#coding')
 
-
+import random
 class user:
+
+
     
     user_id = int(input("Enter a id:"))
     name = input("Enter the name :")
     word = input("Enter the word to include in the password:")
-    t1 = (user_id, name, password)
+    
 
-    def create_password():
-            if len(password) >= 8:
-                lower = False
-                upper = False
-                digit = False
-                special = False
-
-            special_char = "@#$%^&*"
-
-            for ch in password:
-
-                if ch.isupper():
-                    upper = True
-
-                elif ch.islower():
-                    lower = True
-
-                elif ch.isdigit():
-                    digit = True
-
-                elif ch in special_char:
-                    special = True
-
-            return upper and lower and digit and special
-        return False
+    password = ""
+    split_word = word.split()
+    random_word = random.sample(split_word,2)
+    print(random_word)
