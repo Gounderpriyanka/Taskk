@@ -202,3 +202,47 @@ print(l2)'''
 # id, name and password of each user as a tuple.
 
 
+# Input:
+# Enter User ID: 101
+# Enter Name: Priyanka
+# Enter some words: python coding
+# Enter password length: 10
+
+# Output:
+# Generated Password: Py7#coding
+# User Details:
+# (101, 'Priyanka', 'Py7#coding')
+
+
+class user:
+    
+    user_id = int(input("Enter a id:"))
+    name = input("Enter the name :")
+    word = input("Enter the word to include in the password:")
+    t1 = (user_id, name, password)
+
+    def create_password():
+            if len(password) >= 8:
+                lower = False
+                upper = False
+                digit = False
+                special = False
+
+            special_char = "@#$%^&*"
+
+            for ch in password:
+
+                if ch.isupper():
+                    upper = True
+
+                elif ch.islower():
+                    lower = True
+
+                elif ch.isdigit():
+                    digit = True
+
+                elif ch in special_char:
+                    special = True
+
+            return upper and lower and digit and special
+        return False
