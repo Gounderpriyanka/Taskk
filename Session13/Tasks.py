@@ -3,26 +3,27 @@
 
 l1 = ['Perfect','Arcade','Blinding Lights','Espresso','Levitating']
 
-def print_playlist_songs(songs):
+'''def print_playlist_songs(songs):
     if len(songs) ==0 :
         return
     print(songs[0])
     print_playlist_songs(songs[1:])
-print_playlist_songs(l1)
+print_playlist_songs(l1)'''
 
 
-'''
 def print_playlist_songs(songs):
     if len(songs)==0:
-        for i in songs:
-            return''' 
+        return
+    
+    print(songs[0])
+    print_playlist_songs(songs[1:])
+print_playlist_songs(l1)
         
 
+# Create a recursive function count_unread_messages(messages) that takes a nested dictionary representing
+# WhatsApp chat groups and subgroups, and returns the total number of unread messages across all groups.
+# Each group can have a 'count' key for unread messages and a 'subgroups' key with a list of more groups.
 
-# 2.Create a recursive function count_unread_messages(messages) that takes a nested dictionary 
-# representing WhatsApp chat groups and subgroups, and returns the total number of unread messages 
-# across all groups.Hint:Each group can have a 'count' key for unread messages and a 'subgroups'
-#  key with a list of more groups.
 
 '''def count_unread_messages(messages):
     groups = {
