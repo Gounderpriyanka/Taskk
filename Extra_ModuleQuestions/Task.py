@@ -193,25 +193,8 @@ print(fact(5))'''
 l2 = list(set(l1))
 print(l2)'''
 
-#20. Mini project :
-# Problem Statement : Password Generator
-# Make a program to generate a strong password using the input given by the user. To generate a password,
-# randomly take some words from the user input and then include numbers, special characters and capital
-# letters to generate the password. Also, keep a check that password length is more than 8 characters.
-# Note: Include Exception handling wherever required. Also, make a ‘User’ class and store the details like user
-# id, name and password of each user as a tuple.
 
 
-# Input:
-# Enter User ID: 101
-# Enter Name: Priyanka
-# Enter some words: python coding
-# Enter password length: 10
-
-# Output:
-# Generated Password: Py7#coding
-# User Details:
-# (101, 'Priyanka', 'Py7#coding')
 
 import random
 import string
