@@ -27,13 +27,13 @@ print(check_date("my birthday is 04/09/2005"))
 # numeric price values as integers and print their sum.Hint:Look for patterns like 'Rs. ' 
 # followed by one or more digits.
 
-import re
+'''import re
 text = "I bought a shirt for Rs. 299, shoes for Rs. 1500 and a bag for Rs. 750."
 
 prices = re.findall(r'Rs\. \d+',text)
 print(prices)
 
--
+-'''
 
 
 
