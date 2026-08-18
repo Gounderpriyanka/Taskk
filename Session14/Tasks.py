@@ -74,6 +74,18 @@ with open("movies.json",'w') as file:
 '''
  5.Use the pathlib module to check if a file called 'my_fav_apps.json' exists in your current directory,
  and if not, create it and write a JSON array of your top 3 mobile apps (e.g., Instagram, Zomato, Paytm)
-   with their names and categories.<br><br><em><strong>Hint:</strong> Use Path('my_fav_apps.json').
-   exists() to check for the file, and json.dump() to write the data.</em>'''
+   with their names and categories.Use Path('my_fav_apps.json').
+   exists() to check for the file, and json.dump() to write the data.'''
+
+
+with open("misc/students.json",'r') as file:
+    data =json.load(file)
+    print(data)
+
+import pathlib
+
+
+
+data =pathlib.Path("misc/students.json").read_text()
+print(data)
 
