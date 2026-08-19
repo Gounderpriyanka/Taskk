@@ -78,14 +78,22 @@ with open("movies.json",'w') as file:
    exists() to check for the file, and json.dump() to write the data.'''
 
 
-with open("misc/students.json",'r') as file:
-    data =json.load(file)
-    print(data)
+from pathlib import Path
+import json
 
-import pathlib
+file_path = Path("my_fav_apps.json")
 
+if not file_path.exists():
+    apps = [
+        {"name": "Instagram", "category": "Social Media"},
+        {"name": "Zomato", "category": "Food Delivery"},
+        {"name": "Paytm", "category": "Finance"}
+    ]
+    with open(file_path, "w") as file:
+        json.dump(apps, file, indent=4)
 
+    print("File created successfully.")
 
-data =pathlib.Path("misc/students.json").read_text()
-print(data)
+else:
+    print("File already exists.")
 

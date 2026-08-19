@@ -16,12 +16,30 @@ print_playlist_songs(l1)'''
 # Each group can have a 'count' key for unread messages and a 'subgroups' key with a list of more groups.
 
 
-'''def count_unread_messages(messages):
-    groups = {
-        subgroups = {
+def count_unread_messages(messages):
+    total = messages["count"]
 
+    if "subgroups" in messages:
+        for group in messages["subgroups"]:
+            total += count_unread_messages(group)
+
+    return total
+
+
+messages = {
+    "count": 5,
+    "subgroups": [
+        {"count": 3},
+        {
+            "count": 2,
+            "subgroups": [
+                {"count": 4}
+            ]
         }
-    }'''
+    ]
+}
+
+print("Total unread messages:", count_unread_messages(messages))
 
 
 # 3.Given the following code, identify which variables are local and which are global, 
@@ -53,10 +71,20 @@ print("Outside:",x)
 
 
 
-'''
-4.Build a recursive function format_number_short(n) that takes a number (like a follower count on 
-Instagram or YouTube) and returns it as a string in short format: 1500 as '1.5K', 1200000 as
-'1.2M', 500 as '500'.'''
+
+# 4.Build a recursive function format_number_short(n) that takes a number (like a follower count on 
+# Instagram or YouTube) and returns it as a string in short format: 1500 as '1.5K', 1200000 as
+# '1.2M', 500 as '500'.
 
 
-     
+def format_number_short(n):
+    if n < 1000:
+        return str(n)
+    elif n < 1000000:
+        return f"{n / 1000:.1f}K"
+    else:
+        return f"{n / 1000000:.1f}M"
+
+
+n = int(input("Enter follower count: "))
+print(format_number_short(n))

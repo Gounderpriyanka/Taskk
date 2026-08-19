@@ -3,12 +3,47 @@
 # number of songs is zero using try, except, and finally blocks.
 
 
-def get_song_duration_per_minute():
+'''def get_song_duration_per_minute():
 
+    try :
+        n = int(input("Enter total playlist duration (minutes):"))
+        y = int(input("Enter number of songs:"))
+        result = n/y
+        print("Average duration per song : ",result)
+    except ZeroDivisionError:
+        print("Error: Number of songs cannot be zero.")
+    finally :
+        print("completed")
 
+get_song_duration_per_minute()'''
 
  
-'''2.Build a Flipkart-style price-per-item calculator: take total cart amount and item count as input, perform division, and use try-except to catch and display a user-friendly message if the item count is zero.
-3.Create a Paytm cashback calculator that asks for total spend and number of offers applied, then divides spend by offers to show average cashback per offer. If the number of offers is zero, raise a custom exception called NoOffersApplied and display a custom error message.<br><br><em><strong>Hint:</strong> Define your own exception class by subclassing Exception.</em>
-4.Refactor the following buggy code to handle exceptions correctly so it never crashes and always prints 'Thank you for using the calculator' at the end, even if an exception occurs:<br><br>def calculate_average_rating(total_rating, num_reviews):<br> return total_rating / num_reviews<br>print(calculate_average_rating(500, 0))
+# 2.Build a Flipkart-style price-per-item calculator: take total cart amount and item count as input, 
+# perform division, and use try-except to catch and display a user-friendly message if the item count is zero.
+
+
+'''def Flipkart_Price_per_Item():
+    try :
+         n = int(input("Enter total cart amount:"))
+         y = int(input("Enter number of items:"))
+         result = n/y
+    except ZeroDivisionError:
+         print("Error: Number of items cannot be zero.")
+         '''
+         
+
+
+
+
+# 3.Create a Paytm cashback calculator that asks for total spend and number of offers applied, then divides 
+# spend by offers to show average cashback per offer. If the number of offers is zero, raise a custom 
+# exception called NoOffersApplied and display a custom error message.
+# Define your own exception class by subclassing Exception.
+
+
+
+
+
+
+'''4.Refactor the following buggy code to handle exceptions correctly so it never crashes and always prints 'Thank you for using the calculator' at the end, even if an exception occurs:<br><br>def calculate_average_rating(total_rating, num_reviews):<br> return total_rating / num_reviews<br>print(calculate_average_rating(500, 0))
 5.Write a function called safe_divide_for_zomato that takes two numbers (bill amount and number of people), uses try, except, else, and finally to divide the bill and print the result, print a custom error if division by zero, and always print 'Split calculation done' at the end.'''
