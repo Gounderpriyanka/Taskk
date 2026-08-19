@@ -41,7 +41,25 @@ get_song_duration_per_minute()'''
 # Define your own exception class by subclassing Exception.
 
 
+'''
 
+def cashback_calculator():
+    try:
+        spend = float(input("Enter total spend: "))
+        offers = int(input("Enter number of offers applied: "))
+
+        if offers == 0:
+            raise ValueError("No offers were applied.")
+
+        cashback = spend / offers
+        print("Average cashback per offer:", cashback)
+
+    except ValueError as e:
+        print("Error:", e)
+
+
+cashback_calculator()'''
+       
 
 
 
