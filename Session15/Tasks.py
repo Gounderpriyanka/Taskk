@@ -29,9 +29,9 @@ get_song_duration_per_minute()'''
          result = n/y
     except ZeroDivisionError:
          print("Error: Number of items cannot be zero.")
-         '''
          
-
+         
+Flipkart_Price_per_Item()'''
 
 
 
@@ -41,7 +41,11 @@ get_song_duration_per_minute()'''
 # Define your own exception class by subclassing Exception.
 
 
-'''
+
+
+'''class NoOffersApplied(Exception):
+    pass
+
 
 def cashback_calculator():
     try:
@@ -49,19 +53,50 @@ def cashback_calculator():
         offers = int(input("Enter number of offers applied: "))
 
         if offers == 0:
-            raise ValueError("No offers were applied.")
+            raise NoOffersApplied("No offers were applied.")
 
         cashback = spend / offers
         print("Average cashback per offer:", cashback)
 
-    except ValueError as e:
+    except NoOffersApplied as e:
         print("Error:", e)
 
 
 cashback_calculator()'''
-       
 
 
 
-'''4.Refactor the following buggy code to handle exceptions correctly so it never crashes and always prints 'Thank you for using the calculator' at the end, even if an exception occurs:<br><br>def calculate_average_rating(total_rating, num_reviews):<br> return total_rating / num_reviews<br>print(calculate_average_rating(500, 0))
-5.Write a function called safe_divide_for_zomato that takes two numbers (bill amount and number of people), uses try, except, else, and finally to divide the bill and print the result, print a custom error if division by zero, and always print 'Split calculation done' at the end.'''
+# 4.Refactor the following buggy code to handle exceptions correctly so it never crashes and always
+# prints 'Thank you for using the calculator' at the end, even if an exception occurs:
+# def calculate_average_rating(total_rating, num_reviews):return total_rating / num_reviews
+# print(calculate_average_rating(500, 0))
+
+
+
+'''def calculate_average_rating(total_rating, num_reviews):
+        try:
+            return total_rating / num_reviews
+
+        except ZeroDivisionError:
+            print('Thank you for using the calculator')
+
+
+print(calculate_average_rating(500, 0))'''
+
+
+# 5.Write a function called safe_divide_for_zomato that takes two numbers (bill amount and number of people),
+#  uses try, except, else, and finally to divide the bill and print the result, print a custom error if 
+#  division by zero, and always print 'Split calculation done' at the end.
+
+def safe_divide_for_zomato():
+    try:
+        amount = int(input("Enter a Bill amount:"))
+        People = int(input("Enter the number of people:"))
+        result = amount/People
+    except ZeroDivisionError:
+        print("Cannot divide by Zero")
+    else:
+        print("Result:",result)
+    finally:
+        print("succefully Completed")
+safe_divide_for_zomato()

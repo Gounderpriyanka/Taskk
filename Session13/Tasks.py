@@ -76,15 +76,22 @@ print("Outside:",x)
 # Instagram or YouTube) and returns it as a string in short format: 1500 as '1.5K', 1200000 as
 # '1.2M', 500 as '500'.
 
-
-def format_number_short(n):
+def format_number_short(n, index=0):
+    l1 = ['', 'K', 'M', 'B', 'T']
+    
+    # Base case: number is small enough to display as-is
     if n < 1000:
-        return str(n)
-    elif n < 1000000:
-        return f"{n / 1000:.1f}K"
-    else:
-        return f"{n / 1000000:.1f}M"
+        n = int(n * 10) / 10   # keep 1 decimal place, no rounding
+        if n == int(n):
+            n = int(n)
+        return f"{n}{l1[index]}"
+    
+    # Recursive case: shrink number, move to next suffix
+    return format_number_short(n / 1000, index + 1)
 
 
-n = int(input("Enter follower count: "))
-print(format_number_short(n))
+# Test cases
+print(format_number_short(500))         # 500
+print(format_number_short(1500))        # 1.5K
+print(format_number_short(1200000))     # 1.2M
+print(format_number_short(2500000000))  # 2.5B
