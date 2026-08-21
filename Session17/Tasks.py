@@ -31,6 +31,15 @@ print(today)'''
 #  adds a song to a list. Import this module in another script and use it to add three songs to a playlist,
 #  then print the final playlist.
 
+import playlist_utils
+
+playlist = []
+
+playlist_utils.add_song(playlist, "Perfect")
+playlist_utils.add_song(playlist, "Believer")
+playlist_utils.add_song(playlist, "Shape of You")
+
+print("Final Playlist:", playlist)
 
 
 
