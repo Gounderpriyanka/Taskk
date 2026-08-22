@@ -49,7 +49,7 @@ result = re.sub(r'\w+@\w+\.\w+', '[hidden email]', text)
 
 print(result)'''
 
-'''5.Download a sample Instagram comments text file (or create your own with at least 10 lines),
- then write a Python script to extract all valid Instagram usernames (pattern: starts with '@', followed by letters,
-   numbers, underscores, minimum 3 characters) using re.findall() and print the unique usernames.'''
+# 5.Download a sample Instagram comments text file (or create your own with at least 10 lines),
+# then write a Python script to extract all valid Instagram usernames (pattern: starts with '@', followed by letters,
+# numbers, underscores, minimum 3 characters) using re.findall() and print the unique usernames.
 
